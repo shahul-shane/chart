@@ -1,0 +1,195 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('font/BrittiSansTrial-Regular-BF6757bfd47ffbf.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+footer{
+    color: #063970;
+    padding: 20px;
+    height: auto;
+    background-color: #c2ecf173;
+    border-top: 1px solid #063970;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'MyFont';
+}
+.f-about{
+    max-width: 400px;
+    
+}
+.f-sub{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+
+    font-family: 'MyFont';
+}
+.f-sub h3{
+    letter-spacing: 1px;
+    font-size: 23px;
+    
+}
+.f-sub p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+.f-sub form input{
+    width: 220px;
+    border: 2px solid #063970;
+    border-radius: 5px;
+    padding: 7px 3px 7px 7px;
+    color: #063970;
+}
+.f-sub form input::placeholder{
+    color: #063970;
+    font-size: 12px;
+
+}
+.f-sub form button{
+    background-color: #063970;
+    color: white;
+    padding: 9px 14px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.f-about img{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.f-about p{
+    font-size: 15px;
+    line-height: 20px;
+
+}
+.f-quicks ul, .f-services ul{
+    list-style-type: none;
+}
+.f-quicks ul p, .f-services ul p{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.f-quicks ul li, .f-services ul li{
+    height: 22px;
+}
+.f-quicks ul li a, .f-services ul li a{
+    color: #063970a8;
+    text-decoration: none;
+    font-size: 15px;
+}
+.f-services{
+    display: flex;
+}
+.f-quicks ul li a:hover, .f-services ul li a:hover, .f-pol ul li a:hover{
+    color: #063970;
+}
+.f-soc{
+    margin-top: 45px;
+}
+.f-soc ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+.f-soc ul li{
+    text-decoration: none;
+    margin-right: 20px
+}
+.f-soc ul li a{
+    color: #063970;
+    font-size: 26px;
+    
+}
+.f-pol ul{
+    float: right;
+    list-style-type: none;
+    display: flex;
+    font-family: 'MyFont';
+
+}
+.f-pol ul li a{
+    text-decoration: none;
+    color: #063970a8;
+    font-size: 14px;
+}
+.f-pol ul li{
+    margin-right: 25px;
+}
+.f-copyright{
+    font-family: 'MyFont';
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 769px){
+    .footer{
+        flex-direction: column;
+    }
+
+    .f-about{
+        max-width: 100%;
+        
+    }
+    .f-sub{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .f-sub h3{
+        letter-spacing: 1px;
+        font-size: 23px;
+        
+    }
+    .f-sub p{
+        font-size: 15px;
+        margin: 15px 0 35px 0;
+    }
+    .f-sub form{
+        display: flex;
+    }
+
+    .f-about p{
+        font-size: 15px;
+        line-height: 20px;
+    
+    }
+    .f-quicks ul, .f-services ul{
+        margin-top: 30px;
+    }
+    .f-quicks ul p, .f-services ul p{
+        font-size: 17px;
+    }
+
+    .f-soc{
+        margin: 65px 0;
+    }
+
+    .f-soc ul li{
+        text-decoration: none;
+        margin-right: 20px
+    }
+    .f-soc ul li a{
+        font-size: 24px;
+        
+    }
+    .f-pol ul{
+        margin-top: 20px;
+    }
+    .f-copyright{
+        margin-top: 70px;
+    }
+
+}
