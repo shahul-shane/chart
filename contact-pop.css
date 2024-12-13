@@ -1,0 +1,175 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('font/BrittiSansTrial-Regular-BF6757bfd47ffbf.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+.c-pop {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: 'MyFont';
+    background: white;
+    border-radius: 30px;
+    border: 1px solid #063970;
+    padding: 30px;
+}
+.c-pop-form-contaier{
+    width: 280px;
+}
+.c-pop-form{
+    width: 240px;
+
+}
+.c-pop-form p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.c-pop-form p img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.c-pop-form h4{
+    font-size: 26px;
+    font-weight: normal;
+    margin: 30px 0 10px 0;
+}
+.c-pop-form span{
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #000000ad;
+}
+.c-pop-form form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.c-pop-form form input{
+    width: 240px;
+    border: none;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.493);
+    outline: none;
+    margin: 15px 0;
+    padding: 3px 0;
+}
+.c-pop-form form input::placeholder{
+    color: #000000ad;   
+}
+.c-pop-form form button{
+    width: 240px;
+    padding: 8px;
+    margin: 20px 0 15px 0;
+    background-color: #063970cc;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.c-pop-form form button:hover{
+    background-color: #063970;
+}
+.c-pop-form form span{
+    color: #000000a4;
+    text-align: center;
+}
+.c-pop-form form span a{
+    color: #000000a4;
+}
+.c-pop-imgs {
+    position: relative;
+    margin-left: 40px;
+}
+
+.c-pop-img img {
+    width: 400px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: none;
+}
+
+.c-pop-img img.active {
+    display: block;
+}
+
+.c-pop-img-cont {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.c-pop-img-conts p {
+    display: none;
+    background-color: white;
+    padding: 7px 12px;
+    margin-left: 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.c-pop-img-conts p.active {
+    display: block;
+}
+
+.c-pop-img-dots {
+    background-color: white;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.c-dots {
+    width: 6px;
+    height: 6px;
+    background-color: #000000ad;
+    border-radius: 50px;
+    transition: width 0.3s ease, background-color 0.3s ease; 
+}
+
+.c-dots.c-dot-current {
+    width: 18px;
+    background-color: #063970;
+}
+
+.c-pop .c-pop-close{
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    color: black;
+    font-size: 19px;
+}
+.c-pop-hidden{
+    display: none;
+}
+@media screen and (max-width: 769px){
+    .c-pop-imgs {
+        display: none;
+    }
+    .c-pop-form-contaier{
+        width: 250px;
+    }
+    .c-pop .c-pop-close{
+        right: 3%;
+    }
+}
