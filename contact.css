@@ -1,0 +1,284 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+@font-face {
+    font-family: 'MyFont';
+    src: url('font/BrittiSansTrial-Regular-BF6757bfd47ffbf.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.c-section {
+    font-family: 'MyFont';
+    display: flex; /* Enables Flexbox */
+    flex-direction: row; /* Ensures elements are aligned in a row */
+    justify-content: space-evenly; /* Space out child elements evenly */
+    align-items: center; /* Align elements vertically in the container */
+    width: 100%; /* Takes full parent width */
+    height: auto; /* Takes full parent height */
+    margin: 0 auto; /* Ensures center alignment if the container isn't full width */
+}
+
+.c-section-wrapper {
+    display: flex; 
+    flex-direction: column;/* Enables Flexbox on the container */
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center; /* Centers child elements vertically */
+    height: auto; /* Full viewport height */
+    width: 100%; /* Full width */
+    margin: 60px auto; /* Removes any default margin */
+}
+
+
+.c-section .c-det h4{
+    font-size: 54px;
+    letter-spacing: 1px;
+    color: #063970;
+}
+.c-section .c-det h4 span{
+    text-decoration: underline;
+}
+.c-section .c-det h5{
+    font-size: 18px;
+    margin: 40px 0;
+    line-height: 22px;
+    color: #000000de;
+    letter-spacing: 1px;
+}
+
+.c-section .c-det .c-det-grp{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.c-section .c-det .c-det-grp span{
+    color: #000000ad;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.c-det-grp a{
+    color: black;
+    text-decoration: none;
+    font-family: 'MyFont';
+}
+.c-section-map{
+    margin: 50px 0;
+}
+.c-section-map .c-det-grp a{
+    color: black;
+    text-decoration: none;
+    font-family: 'MyFont';
+}
+.c-section-map .c-det-grp a i {
+    padding: 6px 6px;
+    border-radius: 50%;
+    rotate: 45deg;
+    margin-left: 5px;
+    color: white;
+    background-color: #063970;
+}
+.c-section-map iframe{
+    margin-top: 20px;
+    width: 700px;
+    height: 300px;
+}
+.c-form p{
+    display: flex;
+    align-items: center;
+    
+    color: #000;
+}
+.c-form p i{
+    padding: 8px 8px;
+    border-radius: 50%;
+    rotate: 45deg;
+    color: white;
+    background-color: #063970;
+}
+.c-form span{
+    max-width: 300px;
+    color: #000000ad;
+    margin-left: 40px;
+}
+.c-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.c-form .c-contact-form{
+    margin-top: 40px;
+}
+.c-form .c-contact-form p{
+    color: black;
+} 
+.c-form .c-contact-form form .c-form-grp input:nth-child(2){
+    margin-left: 50px;
+}
+.c-form .c-contact-form form input{
+    width: 230px;
+    border: none;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.986);
+    outline: none;
+    margin: 15px 0;
+    padding: 3px 0;
+}
+.c-form .c-contact-form form textarea{
+    width: 230px;
+    border: none;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.986);
+    outline: none;
+    margin: 15px 0;
+    padding: 3px 0;
+}
+.c-form .c-contact-form form button{
+    width: 230px;
+    padding: 9px;
+    margin: 20px 0 15px 0;
+    background-color: #063970;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.089);
+}
+
+.c-faq {
+    font-family: 'MyFont';
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.c-faq-line{
+    width: 200px;
+    height: 3px;
+    background-color: #063970;
+}
+
+
+.c-faq h4{
+    font-size: 34px;
+    margin-left: 140px;
+}
+.c-faqs {
+    font-family: 'MyFont', sans-serif;
+    text-align: center;
+}
+
+.c-faq-accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.c-faq-item{
+    border-bottom: 1px solid #063970;
+}
+
+.c-faq-question {
+    background: none;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.c-faq-question:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.c-faq-question span {
+    font-weight: bold;
+}
+
+.c-faq-icon {
+    font-size: 24px;
+    line-height: 1;
+    color: #063970;
+    transition: transform 0.3s ease;
+}
+
+.c-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    color: #0a0a0a;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: max-height 0.5s ease;
+}
+
+.c-faq-answer p {
+    margin: 20px 0;
+}
+
+.c-faq-item.active .c-faq-answer {
+    max-height: 200px; /* Adjust based on content */
+}
+
+.c-faq-item.active .c-faq-icon {
+    transform: rotate(45deg); /* Animates the '+' to an 'x' */
+}
+.c-more-faq{
+    font-size: 14px;
+    padding: 9px 13px;
+    margin: 30px 0;
+    background-color: #063970;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    float: left;
+}
+@media screen and (max-width: 769px) {
+    .c-section {
+        text-align: center;
+        flex-direction: column;
+    }
+    
+
+    .c-form .c-contact-form form .c-form-grp input:nth-child(2){
+        margin-left: 0px;
+    }
+    .c-form p{
+        display: flex;
+        flex-direction: column-reverse;
+        
+        color: #000;
+        margin-top: 30px;
+    }
+    .c-form p i{
+        margin-top: 10px;
+    }
+    .c-section-map iframe{
+        margin-top: 20px;
+        width: 320px;
+        height: 300px;
+    }
+    .c-form form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .c-more-faq{
+        margin: 30px 10px;
+    }
+    
+}
